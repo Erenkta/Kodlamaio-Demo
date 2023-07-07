@@ -1,0 +1,54 @@
+package kodlamaio.demo.business.concrete;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import kodlamaio.demo.business.abstracts.LanguageService;
+import kodlamaio.demo.core.utils.LangUtils;
+import kodlamaio.demo.dataAccess.abstracts.LanguageRepository;
+import kodlamaio.demo.entities.concretes.ProgrammingLanguage;
+
+@Service
+public class LanguageManager implements LanguageService {
+	LanguageRepository languageRepository;
+	LangUtils langUtils;
+	
+
+	@Autowired
+	public LanguageManager(LanguageRepository languageRepository) { 
+		this.languageRepository = languageRepository;
+		langUtils = new LangUtils(languageRepository.getAll());
+	}
+	
+	@Override
+	public void add(ProgrammingLanguage programmingLanguage) throws Exception {
+		if(langUtils.isNameDuplicate(programmingLanguage)) {
+			languageRepository.add(programmingLanguage);
+		}
+	}
+
+	@Override
+	public void delete(ProgrammingLanguage programmingLanguage) {
+		languageRepository.delete(programmingLanguage);
+		
+	}
+
+	@Override
+	public void update(ProgrammingLanguage programmingLanguage, int index) {
+		languageRepository.update(programmingLanguage, index);
+		
+	}
+
+	@Override
+	public List<ProgrammingLanguage> getAll() {
+		return languageRepository.getAll();
+	}
+
+	@Override
+	public ProgrammingLanguage getById(int id) {
+		return languageRepository.getById(id);
+	}
+
+}

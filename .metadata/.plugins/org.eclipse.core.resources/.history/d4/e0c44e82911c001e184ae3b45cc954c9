@@ -1,0 +1,8 @@
+package kodlamaio.demo.dataAccess.abstracts;
+
+import kodlamaio.demo.entities.concretes.ProgrammingLanguage;
+
+public interface LanguageRepository {
+	public void add(ProgrammingLanguage programmingLanguage);
+	public void delete(ProgrammingLanguage programmingLanguage);
+}

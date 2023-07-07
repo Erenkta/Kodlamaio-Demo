@@ -1,0 +1,25 @@
+package kodlamaio.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import kodlamaio.demo.business.concrete.LanguageManager;
+import kodlamaio.demo.dataAccess.abstracts.LanguageRepository;
+import kodlamaio.demo.dataAccess.concretes.InMemoryLanguageRepository;
+import kodlamaio.demo.entities.concretes.ProgrammingLanguage;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) throws Exception {
+		SpringApplication.run(Application.class, args);
+		
+		LanguageManager languageManager = new LanguageManager(new InMemoryLanguageRepository());
+		ProgrammingLanguage p1 = new ProgrammingLanguage(0,"C#");
+		ProgrammingLanguage p2 = new ProgrammingLanguage(0,"C#");
+		//languageManager.add(p1);
+		//languageManager.add(p2);
+	
+	}
+
+}

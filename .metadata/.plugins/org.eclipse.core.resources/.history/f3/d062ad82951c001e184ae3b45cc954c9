@@ -1,0 +1,11 @@
+package kodlamaio.demo.webApi.controllers;
+
+import kodlamaio.demo.business.abstracts.LanguageService;
+
+public class LanguageController {
+	LanguageService languageService;
+	
+	public LanguageController(LanguageService languageService) {
+		this.languageService = languageService;
+	}
+}

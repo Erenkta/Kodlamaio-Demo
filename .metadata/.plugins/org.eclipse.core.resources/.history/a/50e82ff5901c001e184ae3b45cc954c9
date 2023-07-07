@@ -1,0 +1,6 @@
+package kodlamaio.demo.entities.concretes;
+
+public class ProgrammingLanguage {
+	private int langId;
+	private String name;
+}

@@ -1,0 +1,9 @@
+package kodlamaio.demo.business.abstracts;
+
+import kodlamaio.demo.entities.concretes.ProgrammingLanguage;
+
+public interface LanguageService {
+	
+	public void add(ProgrammingLanguage programmingLanguage) throws Exception;
+	public void delete(ProgrammingLanguage);
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="kodlamaio.demo.core.utils.LangUtils"/>
+    <fullyQualifiedTypeName name="java.lang.invoke.LambdaConversionException"/>
+    <fullyQualifiedTypeName name="kodlamaio.demo.business.abstracts.LanguageService"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="kodlamaio.demo.business.concrete.LanguageManager"/>
+    <fullyQualifiedTypeName name="kodlamaio.demo.dataAccess.abstracts.LanguageRepository"/>
+    <fullyQualifiedTypeName name="kodlamaio.demo.dataAccess.concretes.InMemoryLanguageRepository"/>
+    <fullyQualifiedTypeName name="kodlamaio.demo.entities.concretes.ProgrammingLanguage"/>
+</qualifiedTypeNameHistroy>

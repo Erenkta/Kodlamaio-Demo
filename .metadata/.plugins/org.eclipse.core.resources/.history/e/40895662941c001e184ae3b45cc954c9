@@ -1,0 +1,22 @@
+package kodlamaio.demo.business.concrete;
+
+import kodlamaio.demo.business.abstracts.LanguageService;
+import kodlamaio.demo.core.utils.LangUtils;
+import kodlamaio.demo.dataAccess.abstracts.LanguageRepository;
+import kodlamaio.demo.entities.concretes.ProgrammingLanguage;
+
+public class LanguageManager implements LanguageService {
+	LanguageRepository languageRepository;
+	LangUtils langUtils;
+	
+	public LanguageManager(LanguageRepository languageRepository) { 
+		this.languageRepository = languageRepository;
+		langUtils = new LangUtils();
+	}
+	
+	@Override
+	public void add(ProgrammingLanguage programmingLanguage) {
+		
+	}
+
+}
